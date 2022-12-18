@@ -21,4 +21,39 @@ header {
     padding: 2rem 1rem;
     max-width: 800px;
     margin: 0 auto;
+    width: 100%; 
+}
+
+#task-form {
+    display: flex;
+}
+
+input, button {
+    border: none;
+    outline: none;
+    appearance: none;
+    background: none;
+}
+
+#task-input {
+    flex: 1 1 0%;
+    margin-right: 1rem;
+    padding: 1em;
+    background-color: lightcoral;
+    border-radius: 1rem;
+    font-size: 1rem;
+}
+
+#task-input::placeholder {
+    color: gray;
+}
+
+#task-submit {
+    color: blue;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+#task-submit:hover {
+    color: green;
 }
