@@ -57,3 +57,22 @@ input, button {
 #task-submit:hover {
     color: green;
 }
+
+main {
+    flex: 1 1 0%;
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+.taskList {
+    padding: 1rem;
+}
+
+.taskList h2 {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
