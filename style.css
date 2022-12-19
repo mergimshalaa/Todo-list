@@ -48,11 +48,6 @@ input, button {
     color: gray;
 }
 
-#task-submit {
-    color: blue;
-    font-weight: 700;
-    cursor: pointer;
-}
 
 #task-submit:hover {
     color: green;
@@ -76,3 +71,9 @@ main {
     color: white;
 }
 
+button {
+    background-color: blue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
