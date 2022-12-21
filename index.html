@@ -9,28 +9,14 @@
   <link rel="stylesheet" href="./style.css"/>
   <script src="./main.js"></script>
   <body>
-    <header>
-      <h1>Todo - List</h1>
-      <form type="task-form">
-        <input type="text" id="task-input" placeholder="Tasks...." />
-        <button class="add" id="addTodo">ADD</button>
-      </form>
-    </header>
-    <main>
-      <section class="taskList">
-        <h2>Tasks</h2>
-        <div id="tasks">
-          <div class="task">
-            <div class="content">
-              <input id="inputField" type="text" class="text" value="something" readonly />
-            </div>
-            <div class="actions">
-              <button class="Edit">EDIT</button>
-              <button class="delete">DELETE</button>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
+  <h1>To-Do List</h1>
+
+  <form id="todo-form">
+    <input type="text" id="todo-input" placeholder="Enter a new task">
+    <button type="submit">Add Task</button>
+  </form>
+
+  <ul id="todo-list">
+  </ul>
   </body>
 </html>
