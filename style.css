@@ -3,3 +3,11 @@
     box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
+
+input {
+    margin-top: 1rem;
+}
+
+.todo-item {
+    list-style-type: none;
+}
