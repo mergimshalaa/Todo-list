@@ -11,3 +11,7 @@ input {
 .todo-item {
     list-style-type: none;
 }
+
+.toDo-content {
+    background-color: blue;
+}
