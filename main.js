@@ -12,7 +12,8 @@ function main() {
 function addTodo() {
   const todoInput = document.getElementById("todo-input").value;
   const newLi = document.createElement("li");
-  newLi.innerHTML = todoInput;
+  newLi.classList.add('todo-item')
+  newLi.textContent = todoInput;
 
   const todoList = document.getElementById("todo-list");
   todoList.appendChild(newLi);
