@@ -15,6 +15,11 @@ function addTodo() {
   newLi.classList.add('todo-item')
   newLi.textContent = todoInput;
 
+  const divTasks = document.createElement("div");
+  divTasks.classList.add("divTasks")
+
+  divTasks.append(newLi)
+
   const todoList = document.getElementById("todo-list");
   todoList.appendChild(newLi);
 
