@@ -4,8 +4,9 @@ function main() {
   const form = document.getElementById("todo-form");
   form.addEventListener("submit", function(event) {
     event.preventDefault();
-    
+
     addTodo();
+    renderText();
   });
 }
 
