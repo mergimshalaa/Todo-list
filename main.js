@@ -6,7 +6,6 @@ function main() {
     event.preventDefault();
 
     addTodo();
-    renderText();
   });
 }
 
