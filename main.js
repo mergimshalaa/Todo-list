@@ -9,6 +9,7 @@ function main() {
   });
 }
 
+
 function addTodo() {
   const todoInput = document.getElementById("todo-input").value;
   const newLi = document.createElement("li");
@@ -19,8 +20,14 @@ function addTodo() {
   divTasks.classList.add("divTasks")
 
   divTasks.append(newLi)
+
+   //EDIT BTN 
+   const editBtn = document.createElement("button");
+   editBtn.textContent = "Edit";
+   editBtn.classList.add("edit-btn");
+   editBtn.addEventListener("click", editTodo);
+   divTasks.append(editBtn);
   
- 
   // DELETE BTN
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
