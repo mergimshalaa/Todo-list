@@ -42,7 +42,7 @@ function addTodo() {
 }
 
 
-// Remove todo function
+// Remove todo
 function removeTodo() {
   this.parentNode.remove();
 }
