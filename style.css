@@ -5,9 +5,12 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: #f9f9f9;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f2f2f2;
+  background-image: linear-gradient(to bottom right, #6DD5FA, #2980b9);
 }
+
 
 h1 {
   text-align: center;
