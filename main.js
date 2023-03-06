@@ -85,7 +85,9 @@ function renderTodos() {
     span.innerText = todo.text;
     span.addEventListener("dblclick", deleteOrEditTodo);
     const button = document.createElement("button");
-    button.innerText = "Delete";
+    const icon = document.createElement("i");
+    icon.classList.add("fas", "fa-trash-can");
+    button.appendChild(icon);
     button.addEventListener("click", deleteOrEditTodo);
     li.append(checkbox);
     li.append(span);
