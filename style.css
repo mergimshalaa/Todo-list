@@ -81,3 +81,12 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
+
+  li button:hover {
+    background-color: #e60000;
+  }
+  
+  li.done input {
+    text-decoration: line-through;
+    color: gray;
+  }
