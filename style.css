@@ -122,6 +122,10 @@ button#addTodoButton:hover {
   background-color: #27ae60;
 }
 
+.fa-plus {
+ font-size: 30px;
+}
+
 @media (max-width: 600px) {
   li {
     max-width: 40rem;
