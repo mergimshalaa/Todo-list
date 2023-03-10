@@ -39,6 +39,11 @@ function deleteOrEditTodo(event) {
     todos[index].done = target.checked;
     saveTodos();
     li.classList.toggle("done");
+    if (target.checked) {
+      li.remove();
+      todos.splice(index, 1);
+      saveTodos();
+    }
   } else if (target.tagName === "BUTTON") {
     const li = target.parentNode;
     const index = Array.prototype.indexOf.call(todoList.children, li);
@@ -77,10 +82,14 @@ function renderTodos() {
   for (let i = 0; i < todos.length; i++) {
     const todo = todos[i];
     const li = document.createElement("li");
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = todo.done;
-    checkbox.addEventListener("change", deleteOrEditTodo);
+    const checkIcon = document.createElement("i");
+    checkIcon.classList.add("fa-solid", "fa-check");
+    checkIcon.addEventListener("click", function() {
+      li.remove();
+      todos.splice(i, 1);
+      saveTodos();
+      i--;
+    });
     const span = document.createElement("span");
     span.innerText = todo.text;
     span.addEventListener("dblclick", deleteOrEditTodo);
@@ -89,11 +98,17 @@ function renderTodos() {
     icon.classList.add("fas", "fa-trash-can");
     button.appendChild(icon);
     button.addEventListener("click", deleteOrEditTodo);
-    li.append(checkbox);
+    li.append(checkIcon);
     li.append(span);
     li.append(button);
     if (todo.done) {
       li.classList.add("done");
+      if (checkIcon.checked) {
+        li.remove();
+        todos.splice(i, 1);
+        saveTodos();
+        i--;
+      }
     }
     todoList.append(li);
   }
