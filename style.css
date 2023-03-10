@@ -130,7 +130,12 @@ button#addTodoButton:hover {
   color: black;
   font-size: 20px;
 }
-
+.fa-check {
+  color: green;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+/*======== MEDIA QUERIES==========*/
 @media (max-width: 600px) {
   li {
     max-width: 40rem;
