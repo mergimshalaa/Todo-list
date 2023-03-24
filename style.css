@@ -128,7 +128,7 @@ button#addTodoButton:hover {
 
 .fa-trash-can {
   color: black;
-  font-size: 20px;
+  font-size: 18px;
 }
 .fa-check {
   color: green;
@@ -136,15 +136,21 @@ button#addTodoButton:hover {
   cursor: pointer;
 }
 /*======== MEDIA QUERIES==========*/
-@media (max-width: 600px) {
-  li {
+@media (max-width: 710px) {
+  .container {
     max-width: 40rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
 }
-@media (max-width: 360px) {
+
+@media (max-width: 710px) {
   li {
-    max-width: 20rem;
-    margin-left: 1.2rem;
+    padding: .5rem;
   }
+  li button {
+    padding: 10px .8rem;
+  }
+
 }
